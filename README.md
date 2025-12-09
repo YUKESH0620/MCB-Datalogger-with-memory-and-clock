@@ -54,10 +54,9 @@ Notable electrical details:
 
 <img width="1089" height="748" alt="Screenshot 2025-12-07 232734" src="https://github.com/user-attachments/assets/407da572-8481-402a-a64b-862509b27b57" />
 
-
 - Schematic Page 2 — Connectors
 
-  <img width="1089" height="751" alt="Screenshot 2025-12-07 232811" src="https://github.com/user-attachments/assets/8fdd9232-9f02-43ea-8c04-00f685ffa5e2" />
+<img width="1089" height="751" alt="Screenshot 2025-12-07 232811" src="https://github.com/user-attachments/assets/8fdd9232-9f02-43ea-8c04-00f685ffa5e2" />
 
 
 Refer to the KiCad schematic files in the repo for full net names, pin labels, and design notes.
@@ -86,7 +85,7 @@ Refer to the KiCad schematic files in the repo for full net names, pin labels, a
 | Mounting holes | 4 |
 | Silkscreen | Labeled pins (I²C, UART, GPIO, ICSP) |
 | Unrouted nets | 0 |
-| KiCad version | 9.0.4 |
+| KiCad version | 9.0 |
 
 ---
 
