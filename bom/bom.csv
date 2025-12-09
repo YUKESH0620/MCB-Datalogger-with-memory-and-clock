@@ -1,8 +1,8 @@
-Ref,Quantity,Part,Value/Notes,Footprint,Manufacturer,MPN,
-U1,1,ATmega328P-AU,Microcontroller,TQFP-32,Microchip,ATMEGA328P-AU,
-U2,1,DS1337S,RTC (I2C),SOIC-8,Maxim,DS1337S,
-U3,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025,
-U4,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025,
+Ref,Quantity,Part,Value/Notes,Footprint,Manufacturer,MPN
+U1,1,ATmega328P-AU,Microcontroller,TQFP-32,Microchip,ATMEGA328P-AU
+U2,1,DS1337S,RTC (I2C),SOIC-8,Maxim,DS1337S
+U3,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025
+U4,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025
 Y2,1,Crystal,16 MHz (MCU),SMD,Various,
 Y1,1,Crystal,32.768 kHz (RTC),SMD,Various,
 BT1,1,Coin cell holder,CR2032 holder,Through-hole,Various,
