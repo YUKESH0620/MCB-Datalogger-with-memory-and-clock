@@ -1,0 +1,25 @@
+Ref,Quantity,Part,Value/Notes,Footprint,Manufacturer,MPN
+U1,1,ATmega328P-AU,Microcontroller,TQFP-32,Microchip,ATMEGA328P-AU
+U2,1,DS1337S,RTC (I2C),SOIC-8,Maxim,DS1337S
+U3,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025
+U4,1,24LC1025,I2C EEPROM,SOIC-8,Microchip,24LC1025
+Y2,1,Crystal,16 MHz (MCU),SMD,Various,
+Y1,1,Crystal,32.768 kHz (RTC),SMD,Various,
+BT1,1,Coin cell holder,CR2032 holder,Through-hole,Various,
+C1,1,Capacitor,0.1 uF,0603,Ceramic,
+C4,1,Capacitor,0.1 uF,0603,Ceramic,
+C2,1,Capacitor,22 pF,0603,Ceramic,
+C3,1,Capacitor,22 pF,0603,Ceramic,
+R1,1,Resistor,10 kOhm (RTC pull-up),0603,Various,
+R2,1,Resistor,10 kOhm (RTC pull-up),0603,Various,
+R3,1,Resistor,4.7 kOhm (EEPROM pull-up),0603,Various,
+R4,1,Resistor,4.7 kOhm (EEPROM pull-up),0603,Various,
+R5,1,Resistor,330 Ohm (LED),0603,Various,
+R7,1,Resistor,330 Ohm (LED),0603,Various,
+D1,1,LED,Status LED,SMD-0805,Various,
+D2,1,LED,Status LED,SMD-0805,Various,
+J1,1,Header,I2C 4-pin,Header-1x4,Various,
+J2,1,Header,UART 3-pin,Header-1x3,Various,
+J3,1,Header,GPIO header,Header-1xN,Various,
+J4,1,Header,ICSP 6-pin (2x3),2x3 2.54mm,Various,
+MH1,4,Mounting hole,M3 mounting hole,Mechanical,Various,
