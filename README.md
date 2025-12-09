@@ -1,7 +1,6 @@
-# MCB-Datalogger-with-memory-and-clock
 # MCU Datalogger with Memory and Real-Time Clock
 
-A compact, low-power data-logging board designed in KiCad (v9.0.4). The board is built around an ATmega328P-AU microcontroller, a DS1337S real-time clock (RTC) with a 32.768 kHz crystal, and two 24LC1025 I²C EEPROM devices for extended timestamped data storage. The design is a 2-layer custom PCB sized 87.63 mm × 39.116 mm and is powered by a coin-cell battery (BT1) for RTC backup. Data can be accessed via I²C or UART; the MCU is programmable by ICSP or a UART bootloader.
+A compact, low-power data-logging board designed in KiCad (v9.0.4). The board is built around an ATmega328P-AU microcontroller, a DS1337S real-time clock (RTC) with a 32.768 kHz crystal, and two 24LC1025 I²C EEPROM devices for extended timestamped data storage. The design is a 2-layer custom PCB sized 87.63mm × 39.116mm and is powered by a coin-cell battery (BT1) for RTC backup. Data can be accessed via I²C or UART; the MCU is programmable by ICSP or a UART bootloader.
 
 ---
 
@@ -23,9 +22,9 @@ This project is a lightweight, modular data logger intended for timestamped sens
 - Non-volatile memory: 2 × 24LC1025 EEPROM (I²C)
 - Connectivity: I²C header, UART (RX/TX) header, GPIO header, 6-pin ICSP
 - Indicators: 2 status LEDs
-- Power: Coin-cell holder (BT1) for RTC backup
+- Power: Coin-cell Battery (BT1) for RTC backup
 - Board: 2-layer PCB; 87.63 mm × 39.116 mm; 4 mounting holes
-- KiCad version: 9.0.4
+- KiCad version: 9.0.0
 
 ---
 
@@ -53,23 +52,32 @@ Notable electrical details:
 
 - Schematic Page 1 — Main MCU, RTC, EEPROM
 
-  ![Schematic - Page 1](./docs/schematic_page1.png)
+<img width="1089" height="748" alt="Screenshot 2025-12-07 232734" src="https://github.com/user-attachments/assets/407da572-8481-402a-a64b-862509b27b57" />
+
 
 - Schematic Page 2 — Connectors
 
-  ![Schematic - Page 2](./docs/schematic_page2.png)
+  <img width="1089" height="751" alt="Screenshot 2025-12-07 232811" src="https://github.com/user-attachments/assets/8fdd9232-9f02-43ea-8c04-00f685ffa5e2" />
+
 
 Refer to the KiCad schematic files in the repo for full net names, pin labels, and design notes.
 
 ---
 
 ## PCB Layout
+### 2 layer
 
-- Top view:
+<img width="1919" height="1017" alt="Screenshot 2025-12-07 234339" src="https://github.com/user-attachments/assets/0fd36ca8-c6df-4e14-b4b8-976aa1610196" />
 
-  ![PCB Layout - Top View](./docs/pcb_top_view.png)
+### 4 layer
+<img width="1919" height="1017" alt="Screenshot 2025-12-07 205859" src="https://github.com/user-attachments/assets/2116deb8-b2ee-4c6b-843f-75be98286675" />
+  
+### 3D View
+<img width="1722" height="941" alt="Screenshot 2025-12-07 210802" src="https://github.com/user-attachments/assets/5b03139a-c719-4831-acc4-4f5f6bc8c8fa" />
+<img width="1249" height="811" alt="Screenshot 2025-12-07 210208" src="https://github.com/user-attachments/assets/80f7a651-ca3b-4115-9407-7a7d2b2d2fb1" />
 
-### PCB summary
+
+#### PCB summary
 
 | Property | Value |
 |---|---:|
@@ -100,7 +108,7 @@ Refer to the KiCad schematic files in the repo for full net names, pin labels, a
 | U3, U4 | 2 | 24LC1025 | I²C EEPROM |
 | Y2 | 1 | Crystal | 16 MHz (MCU) |
 | Y1 | 1 | Crystal | 32.768 kHz (RTC) |
-| BT1 | 1 | Coin cell holder | CR2032 or equivalent (observe polarity) |
+| BT1 | 1 | Battery | CR2032 or equivalent (observe polarity) |
 | C1, C4 | 2 | 0.1 µF | Ceramic decoupling caps |
 | C2, C3 | 2 | 22 pF | Crystal load caps |
 | R1, R2 | 2 | 10 kΩ | RTC pull-ups |
@@ -165,14 +173,13 @@ Firmware recommendations:
 
 ---
 
-## Testing & Validation
+<!--## Testing & Validation
 
 - Verify MCU oscillator and boot behavior after programming.
 - Confirm RTC register reads/writes and timekeeping across coin-cell swaps.
 - Use an I²C scanner to validate device addresses for RTC and EEPROMs.
-- Test UART responses and data export functionality.
+- Test UART responses and data export functionality. -->
 
----
 
 ## Future Improvements
 
